@@ -15,3 +15,4 @@ yarn global add node-todo-lsy
 ```
 t
 ```
+![命令效果](http://ww1.sinaimg.cn/large/0067zCCtly1gf2sy9re3jj30rj07jt9c.jpg)
