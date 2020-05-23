@@ -70,6 +70,7 @@ function changeTitle(list, index) {
 function deleteAsk(list, index) {
   list.splice(index, 1)
   db.write(list)
+  console.log('删除成功')
 }
 function createNewAsk(list) {
   inquirer.prompt({
