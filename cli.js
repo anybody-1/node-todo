@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 const { program } = require('commander');
 const api = require('./index.js')
+const pak = require('./package.json')
 if (process.argv.length === 2) {
   api.showAll()
 } else {
   program
-    .version('0.0.1')
+    .version(pak.version)
   program
     .command('add')
     .description('add a task')

@@ -23,7 +23,7 @@ function printTasks(list) {
     message: '请选择你要操作的任务',
     choices: [{ name: '退出', value: -1 }, ...list.map((task, index) => {
       return {
-        name: `${task.done ? '[x]' : '[_]'} ${index + 1} - ${task.title}`, value: index.toString()
+        name: `${task.done ? '[√]' : '[x]'} ${index + 1} - ${task.title}`, value: index.toString()
       }
     }), { name: '创建新任务', value: -2 }]
   }).then(answer => {
