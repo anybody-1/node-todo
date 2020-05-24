@@ -37,3 +37,15 @@ t add <taskName>
 ```
 t clear
 ```
+
+4.运行测试用例
+
+```
+yarn test
+```
+
+或者
+
+```
+npm test
+```

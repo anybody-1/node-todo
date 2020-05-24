@@ -8,9 +8,15 @@
   ],
   "version": "0.0.4",
   "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
   "license": "MIT",
   "dependencies": {
     "commander": "^5.1.0",
     "inquirer": "^7.1.0"
+  },
+  "devDependencies": {
+    "jest": "^26.0.1"
   }
 }
