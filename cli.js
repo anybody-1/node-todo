@@ -14,7 +14,8 @@ if (process.argv.length === 2) {
     .description('add a task')
     .action((source, destination) => {
       if (!destination) { return console.log('请按照格式输入-add <任务名称>') }
-      api.add(destination[0]).then(() => console.log('添加成功'), () => console.log('添加失败'))
+      let words = destination.join(' ')
+      api.add(words).then(() => console.log('添加成功'), () => console.log('添加失败'))
     });
   program
     .command('clear')
