@@ -6,7 +6,6 @@ const db = {
   read(path = dbPath) {
     return new Promise((resolve, reject) => {
       fs.readFile(path, { flag: 'a+' }, (err, data) => {
-
         if (err) return reject(err)
         let list
         try {
