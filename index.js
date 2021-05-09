@@ -46,7 +46,6 @@ function askForAction(list, index) {
     choices: [{ name: '退出', value: 'quite' }, { name: '已完成', value: 'done' }, { name: '未完成', value: 'unDone' }, { name: '改标题', value: 'changeTitle' }, { name: '删除', value: 'deleteAsk' }]
   }).then(answer => {
     actionList[answer.action] && actionList[answer.action](list, index)
-
   })
 }
 function done(list, index) {
